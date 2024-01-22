@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>input태그</title>
+    </head>
+
+    <style>
+        * {
+            margin: 10px;
+            padding: 0;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+    </style>
+
+
+    <body>
+        
+        <section class="login_form">
+            <form action="">
+                <fieldset style="width: 500px;">
+                    <label>아이디: <input type="text" id="user_id" size="10"></label>
+                    <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+                </fieldset>
+                <input type="submit" value="로그인">
+            </form>
+        </section><!-- login_form end -->
+
+
+        <section class="deli_form">
+            <ul>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name">
+                </li>
+                <li>
+                    <label for="addr">배송주소</label>
+                    <input type="text" id="user_addr">
+                </li>
+                <li>
+                    <label for="e_mail">이메일</label>
+                    <input type="email" id="user_email">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone">
+                </li>
+            </ul>
+        </section><!-- deli_form end -->
+
+        <section class="check_form">
+            <fieldset>
+                <legend>상품 선택</legend>
+                <p><b>주문할 상품을 선택해 주세요.</b></p>
+                <label><input type="checkbox" value="s_3">선물용 3kg</label>
+                <label><input type="checkbox" value="s_5">선물용 5kg</label>
+                <label><input type="checkbox" value="f_3">가정용 5kg</label>
+                <label><input type="checkbox" value="f_5">가정용 5kg</label>
+                <p><b>포장 선택</b></p>
+                <label><input type="radio" name="gift" value="yes">선물 포장</label>
+                <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+            </fieldset>
+        </section><!-- check_form end -->
+    </body>
+</html>
