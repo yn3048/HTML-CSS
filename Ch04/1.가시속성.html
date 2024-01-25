@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.가시속성</title>
+    <!-- 
+        날짜 : 2024/01/24
+        이름 : 이예나
+        내용 : 가시속성 실습하기
+     -->
+
+     <style>
+        span { background-color: orange;}
+        div > div { background-color: green;}
+
+        .box1 > span:nth-child(1) {display: none;} /* 자리 공간까지 사라짐 */
+        .box1 > span:nth-child(2) {visibility: hidden;} /* 태그 공간만 사라짐 */
+        .box1 > span:nth-child(3) {opacity: 0.3} /* 투명도 */
+        
+        .box2 > span:nth-child(2) {display: block;}/* inline태그인 span을 block태그로 변환시켜줌 */
+        .box3 > div { display: inline;} /* block 태그인 div를 inline태그로 변환시켜줌 */
+        .box4 > div {
+            display: inline-block; /* inline과 block 요소를 겸비 (inline처럼 display되지만 크기 조절이 가능함) */
+            width: 100px;
+            height: 100px;
+        }
+
+     </style>
+</head>
+<body>
+    <h3>1.가시속성</h3>
+
+    <h4>display: none</h4>
+    <div class="box1">
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
+
+    <h4>display: block</h4>
+    <div class="box2">
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
+
+    <h4>display: inline</h4>
+    <div class="box3">
+        <span>span1</span>
+        <div>DIV2</div>
+        <span>span3</span>
+    </div>
+
+    <h4>display: inline-block</h4>
+    <div class="box4">
+        <span>span1</span>
+        <div>DIV2</div>
+        <span>span3</span>
+    </div>
+</body>
+</html>
