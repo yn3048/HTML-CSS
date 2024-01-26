@@ -259,7 +259,7 @@
 
     <section>
         <style>
-            .box8 {
+           /*  .box8 {
                 position: relative;
             }
             .box8 > div {
@@ -291,6 +291,36 @@
                 background-color: blue;
                 bottom: 0;
                 right: 0;
+            } */
+
+            .box8 >div {
+                width: 100px;
+                height: 100px;
+            }
+
+            .box8 >div:nth-child(1) {
+                background-color: red;
+                float: left;
+            }
+            .box8 >div:nth-child(2) {
+                background-color: green;
+                float: right;
+            }
+            .box8 >div:nth-child(3) {
+                background-color: orange;
+                float: left;
+                clear: left;
+                position: relative;
+                left: 100px;
+            }
+            .box8 >div:nth-child(4) {
+                background-color: pink;
+                float: left;
+                clear: left;
+            }
+            .box8 >div:nth-child(5) {
+                background-color: blue;
+                float: right;
             }
         </style>
         <h4>문제8</h4>

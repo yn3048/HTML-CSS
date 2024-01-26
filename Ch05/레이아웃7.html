@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃7</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ol, 
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #container {
+            width: 860px;
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        main > p {
+            margin-bottom: 10px;
+        }
+
+        main > aside {
+            width: 198px;
+            height: 400px;
+            padding: 10px;
+            background-color: #ccc;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            float: left;
+            margin-right: 10px;
+        }
+        main > section {
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+            background-color: #ccc;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>header</header>
+        <main>
+            <p>main</p>
+            <aside>aside #1</aside>
+            <aside>aside #2</aside>
+            <section>section</section>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

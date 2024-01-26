@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃3</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ol, 
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #container {
+            width: 800px;
+            height: auto;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        header {
+            width:100%;
+            height: 120px;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        main p {
+            margin-bottom: 10px;
+        }
+
+        section {
+            width: 100%;
+            height: auto;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            background-color: #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        section > article {
+            width: 100%;
+            height: 200px;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ccc;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #eee;
+            border: 1px dashed black;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>header</header>
+        <main>
+            <p>main</p>
+            <section>
+                section #1
+                <article>article #1</article>
+                <article>article #2</article>
+            </section>
+            <section>
+                section #2
+                <article>article #1</article>
+                <article>article #2</article>
+            </section>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
