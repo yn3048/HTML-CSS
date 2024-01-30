@@ -1,0 +1,414 @@
+   /* 초기화 */
+   * {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+    box-sizing: border-box;
+}
+
+ul,ol {list-style: none;}
+a { text-decoration: none; color: #111;}
+input,textarea {outline: none;}
+
+/* 🎈container */
+#container {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+/* 🎈header */
+header {
+    width: 100%;
+    height: 142px;
+    background: url('../images/head_top_line.png') no-repeat;
+    position: relative;
+}
+
+header > .logo {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+header > .logo > img{
+}
+header > p {
+    float: right;
+    margin-top: 16px;
+}
+header > p > a {}
+header > img {
+    float: right;
+    clear: both;
+    margin-top: 24px;
+}
+header > .gnb {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header > .gnb > li {
+    position: relative;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    float: left; 
+    width: 20%;
+    height: 100%;
+
+}
+
+header > .gnb > li > img {
+    position: absolute;
+    top: -15px;
+    right: 60px;
+}
+
+header > .gnb > li >a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    border-top: 2px solid #3f3f3f;
+}
+
+header > .gnb > li:nth-child(1) >a {background-image: url('../images/head_menu1.png');}
+header > .gnb > li:nth-child(2) >a {background-image: url('../images/head_menu2.png');}
+header > .gnb > li:nth-child(3) >a {background-image: url('../images/head_menu3.png');}
+header > .gnb > li:nth-child(4) >a {background-image: url('../images/head_menu4.png');}
+header > .gnb > li:nth-child(5) >a {background-image: url('../images/head_menu5.png');}
+
+header > .gnb > li:nth-child(1) >a:hover {background-image: url('../images/head_menu1_ov.png');}
+header > .gnb > li:nth-child(2) >a:hover {background-image: url('../images/head_menu2_ov.png');}
+header > .gnb > li:nth-child(3) >a:hover {background-image: url('../images/head_menu3_ov.png');}
+header > .gnb > li:nth-child(4) >a:hover {background-image: url('../images/head_menu4_ov.png');}
+header > .gnb > li:nth-child(5) >a:hover {background-image: url('../images/head_menu5_ov.png');}
+
+/* 🎈footer*/
+footer {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    border-top: 1px solid #b1cab2;
+}
+
+footer > img {}
+footer > p {
+    font-size: 11px;
+    float: right;
+    margin-top: 26px;
+    margin-right: 16px;
+    color: #585858;
+    line-height: 20px;
+}
+footer > p > span {
+    color: #888;
+    font-weight: bold;
+}
+/* 🎈main*/
+main {
+    width: 100%;
+    height: auto;
+}
+
+main > section {
+    width: 100%;
+    margin-top: 10px;
+}
+/* 🎈main slider*/
+.slider {
+    height: 312px;
+    position: relative;
+}
+
+.slider > img {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.slider > .banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+    height: 100%;
+    background: url('../images/main_banner_bg.jpg');
+}
+.slider > .banner > img:nth-child(1) {
+    float: right;
+    margin: 6px;
+}
+.slider > .banner > img:nth-child(2) {
+    margin-left: 12px;
+    margin-top: -10px;
+}
+.slider > .banner > img:nth-child(3) {
+    margin-top: 2px;
+}
+
+.slider > ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider > ul > li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slider > ul > li:nth-child(1) {left: 0; top: 0;}
+.slider > ul > li:nth-child(2) {left: 100%; top: 0;}
+.slider > ul > li:nth-child(3) {left: 200%; top: 0;}
+
+/* 🎈main quick*/
+.quick {
+    height: 74px;
+}
+.quick > a {
+    width: 50%;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 16px;
+}
+
+
+.quick > a:nth-child(1) {background-image: url('../images/main_banner_sub1_bg.jpg');}
+.quick > a:nth-child(2) {background-image: url('../images/main_banner_sub2_bg.jpg');}
+
+
+/* 🎈main latest*/
+.latest{
+    height: 186px;
+}
+.latest > div {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.latest > div > img:nth-child(1) {position: absolute; left: 0; top: 10px;}
+.latest > div > img:nth-child(2) {position: absolute; left: 0; bottom: 10px;}
+.latest > div > table {
+    position: absolute; 
+    right: 10px; 
+    bottom: 8px;
+    color: #777;
+}
+.latest > div > table td:nth-child(2){
+    display: block; /* width값이 풀리기 때문에 block 지정 해줘야함 */
+    width: 146px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* 🎈main info*/
+.info{
+    padding-top: 10px;
+    height: 154px;
+    border-top: 2px solid #756c65;
+}
+
+.info > div {
+   /*  border: 1px solid blue; */
+    height: 100%;
+    float: left;
+}
+
+.info > div:nth-child(1) {width: 386px;}
+.info > div:nth-child(2) {
+    width: 230px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    padding-left: 10px;
+}
+.info > div:nth-child(3) {
+    width: 364px;
+    padding-left: 10px;
+}
+
+/* info 고객센터 안내  */
+.info > div .tit {
+    margin-bottom: 16px;
+}
+
+.info > div .tel {
+    overflow: hidden;
+
+}
+.info > div .tel > * {
+    float: left;
+    margin-right: 16px;
+}
+.info > div .tel > img {}
+.info > div .tel {}
+.info > div .tel .time {
+    line-height: 18px;
+    color: #666;
+}
+
+.info > div > .btns {
+    margin-top: 16px;
+}
+
+/* info 계좌안내 */
+.info > div > .account {
+    line-height: 18px;
+    color: #666;
+}
+
+/* info 공지사항 */
+.info .notice > p {
+    display: inline-block;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #999;
+    border-bottom: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.info .notice > ul li {
+    line-height: 1.3;
+    color: #888;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;    
+}
+
+ /* ✨서브 공통 */
+ #sub {
+    width: 100%;
+    height: auto;
+    
+}
+#sub > .bg {
+    width: 100%;
+    height: 184px;
+}
+#sub > section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#sub > section > aside {
+    float: left;
+    width: 180px;
+    height: 650px;
+}
+#sub > section > article {
+    float: left;
+    width: 800px;
+    height: 650px;
+
+    padding-left: 40px;
+}
+
+#sub > section > article > nav {
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+/* 🎈팜스토리 소개 */
+.introduction {
+
+}
+
+.introduction .bg {
+    background-image: url('../images/sub_top_bg.jpg');
+    position: relative;
+}
+
+.introduction .bg img {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.introduction .cate1 aside .lnb {
+    width: 175px;
+    height: 233px;
+    background-image: url('../images/sub_aside_bg_lnb.png');
+    padding-top: 26px;
+}
+
+.introduction .cate1 aside .lnb li {
+    width: 100%;
+    height: 29px;
+    margin-bottom: 6px;
+}
+
+.introduction .cate1 aside .lnb li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.introduction .cate1 aside .lnb li:nth-child(1) a {
+    background : url('../images/sub_cate1_lnb1.png')
+}
+.introduction .cate1 aside .lnb li:nth-child(2) a {
+    background: url('../images/sub_cate1_lnb2.png');
+}
+
+.introduction .cate1 aside .lnb li:nth-child(1) a:hover {
+    background : url('../images/sub_cate1_lnb1_ov.png')
+}
+.introduction .cate1 aside .lnb li:nth-child(2) a:hover {
+    background: url('../images/sub_cate1_lnb2_ov.png');
+}
+
+.introduction .cate1 .content {}
+.introduction .cate1 .content nav {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.introduction .cate1 .content nav img {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
+.introduction .cate1 .content nav p {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    color: #8c8c8c;
+    padding-left: 20px;
+    background-image: url('../images/sub_page_nav_ico.gif');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.introduction .cate1 .content nav p > em {
+    font-weight: bold;
+    color: #91BA15;
+}
+
+.introduction .cate1 .content p {
+    margin-top: 10px;
+    padding: 0;
+    line-height: 1.5;
+    color: #666;
+}
+
+.introduction .cate1 .content p strong {
+    font-weight: bold;
+    color: #91BA15;
+}
+
+
+
+
+
