@@ -408,6 +408,9 @@ main > section {
     font-weight: bold;
     color: #91BA15;
 }
+/* --------------팜스토리소개 끝------------ */
+
+
 
 /* 🎈장보기 */
 
@@ -550,3 +553,135 @@ main > section {
     border-top: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
 }
+
+#sub > .cate2 > .order > .info > table .total {
+    color: #c20a0a;
+    font-weight: bold;
+}
+
+/*  ✨order shipping*/
+#sub > .cate2 > .order > .shipping table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #be0808;
+}
+
+#sub > .cate2 > .order > .shipping table td {
+    padding: 10px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#sub > .cate2 > .order > .shipping table td:first-child {
+    width: 120px;
+    background: #f7f7f7;
+}
+
+#sub > .cate2 > .order > .shipping input {
+    height: 18px;
+    border: 1px solid #d7d7d7;
+    outline: none;
+}
+
+#btnZip {
+    width: 91px;
+    height: 20px;
+    background-image: url(../images/btn_post_search.gif);
+    font-size: 0;
+    border: none;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+#sub > .cate2 > .order > .shipping input[name=addr1] {
+    display: block;
+    width: 320px;
+    margin-top: 2px;
+}
+
+#sub > .cate2 > .order > .shipping input[name=addr2] {
+    display: block;
+    width: 320px;
+    margin-top: 2px;
+}
+
+#sub > .cate2 > .order > .shipping textarea {
+    width: 320px;
+    height: 60px;
+    border: 1px solid #d7d7d7;
+    resize: none;
+    outline: none;
+}
+
+#sub > .cate2 > .order > p {
+    margin: 16px 0;
+    text-align: center;
+}
+
+/* --------장보기 끝----------- */
+
+/* 🎈농작물 이야기 */
+#sub > .cate3 .lnb > li:nth-child(1) > a {
+    background-image: url(../images/sub_cate3_lnb1.png);
+}
+#sub > .cate3 .lnb > li:nth-child(2) > a {
+    background-image: url(../images/sub_cate3_lnb2.png);
+}
+#sub > .cate3 .lnb > li:nth-child(3) > a {
+    background-image: url(../images/sub_cate3_lnb3.png);
+}
+
+
+#sub > .cate3 .lnb > li:nth-child(1):hover > a {
+    background-image: url(../images/sub_cate3_lnb1_ov.png);
+}
+
+#sub > .cate3 .lnb > li:nth-child(2):hover > a {
+    background-image: url(../images/sub_cate3_lnb2_ov.png);
+}
+#sub > .cate3 .lnb > li:nth-child(3):hover > a {
+    background-image: url(../images/sub_cate3_lnb3_ov.png);
+}
+
+/* 🎈이벤트 */
+
+#sub > .cate4 .lnb > li:nth-child(1) > a {
+    background-image: url(../images/sub_cate4_lnb1_ov.png);
+}
+
+
+
+/* 🎈커뮤니티 */
+#sub > .cate5 .lnb > li:nth-child(1) > a {
+    background-image: url(../images/sub_cate5_lnb1.png);
+}
+#sub > .cate5 .lnb > li:nth-child(2) > a {
+    background-image: url(../images/sub_cate5_lnb2.png);
+}
+#sub > .cate5 .lnb > li:nth-child(3) > a {
+    background-image: url(../images/sub_cate5_lnb3.png);
+}
+#sub > .cate5 .lnb > li:nth-child(4) > a {
+    background-image: url(../images/sub_cate5_lnb4.png);
+}#sub > .cate5 .lnb > li:nth-child(5) > a {
+    background-image: url(../images/sub_cate5_lnb5.png);
+}
+
+
+#sub > .cate5 .lnb > li:nth-child(1):hover > a {
+    background-image: url(../images/sub_cate5_lnb1_ov.png);
+}
+
+#sub > .cate5 .lnb > li:nth-child(2):hover > a {
+    background-image: url(../images/sub_cate5_lnb2_ov.png);
+}
+#sub > .cate5 .lnb > li:nth-child(3):hover > a {
+    background-image: url(../images/sub_cate5_lnb3_ov.png);
+}
+#sub > .cate5 .lnb > li:nth-child(4):hover > a {
+    background-image: url(../images/sub_cate5_lnb3_ov.png);
+}
+#sub > .cate5 .lnb > li:nth-child(5):hover > a {
+    background-image: url(../images/sub_cate5_lnb3_ov.png);
+}
+
+

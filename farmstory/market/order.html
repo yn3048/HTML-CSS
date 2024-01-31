@@ -24,12 +24,12 @@
             <ul class="gnb">
                 <li><a href="../introduction/hello.html">팜스토리소개</a></li>
                 <li>
-                    <a href="../market/llist.html">장보기</a>
+                    <a href="../market/list.html">장보기</a>
                     <img src="../images/head_menu_badge.png" alt="30%할인">
                 </li>
-                <li><a href="#">농작물이야기</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">커뮤니티</a></li>
+                <li><a href="../croptalk/story.html">농작물이야기</a></li>
+                <li><a href="../event/event.html">이벤트</a></li>
+                <li><a href="../community/notice.html">커뮤니티</a></li>
             </ul><!-- .gnb end -->
         </header><!-- header end -->
 
@@ -79,13 +79,46 @@
                             </tr>
                             <tr>
                                 <td>구매수량</td>
-                                <td><input type="number" name="count" min="1" value="1"></td>
+                                <td>1개</td>
                             </tr>
                             <tr>
                                 <td>합계</td>
                                 <td class="total">4,000원</td>
                             </tr>
                         </table>
+                    </div><!-- .info end -->
+                    <h3>주문정보 입력</h3>
+                    <div class="shipping">
+                        <table>
+                            <tr>
+                                <td>받는분</td>
+                                <td><input type="text" name="receiver"></td>
+                            </tr>
+                            <tr>
+                                <td>휴대폰</td>
+                                <td><input type="hp" name="hp"></td>
+                            </tr>
+                            <tr>
+                                <td>배송주소</td>
+                                <td>
+                                    <input type="text" name="zip" readonly>
+                                    <button id="btnZip">우편번호 검색</button>
+                                    <input type="text" name="addr1" placeholder="기본주소 검색">
+                                    <input type="text" name="addr2" placeholder="상세주소 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>기타</td>
+                                <td>
+                                    <textarea name="etc"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div><!-- .shipping end -->
+                    <p>
+                        <a href="#"><img src="../images/market_btn_buy.gif" alt="구매하기 버튼"></a>
+                        <a href="#"><img src="../images/market_btn_shopping.gif" alt="쇼핑하기 버튼"></a>
+                    </p>
                 </article><!-- list end -->
             </section><!-- .cate2 end -->
         </div><!-- introduction end -->
