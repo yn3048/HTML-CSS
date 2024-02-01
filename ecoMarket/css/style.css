@@ -258,12 +258,14 @@ main > .new > article > div:nth-child(2) {
 
 main > .new > article > div:nth-child(3) {
     height: 50%;
+    border-bottom: 1px solid #d4d4d4;
 }
 main > .new > article > div:nth-child(4) {
     height: 50%;
 }
 main > .new > article > div:nth-child(5) {
     height: 50%;
+
 }
 
 main > .new div > span {
