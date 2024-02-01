@@ -72,6 +72,10 @@ header .gnb > li > a {
     font-weight: bolder;
 }
 
+header .gnb > li > a:hover {
+    color: #7b231f;
+}
+
 header .latest {
     position: relative;
     width: 100%;
@@ -124,7 +128,7 @@ main > div > div {
 
 main > div .banner {
     float: left;
-    width: 558px;
+    width: 588px;
     height: 320px;
     background: url('../images/main_banner_bg.jpg') no-repeat;
     overflow: hidden;
@@ -251,6 +255,9 @@ main > section > aside > article > ul > li {
     overflow: hidden;
     line-height: 20px;
 }
+main > section > article > ul > li > a:hover {
+    text-decoration: underline;
+}
 
 main > section > aside > article > ul li:hover {
     text-decoration: underline;
@@ -345,6 +352,11 @@ main > section > article {
     margin-top: 5px;
     padding: 16px;
     border: 1px solid #d7d7d7;
+}
+
+main > section > article > h3 {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 main > section > article > h3 a {
