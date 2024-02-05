@@ -270,19 +270,23 @@ main > section {
 .info .notice > p {
     display: inline-block;
     width: 70px;
-    padding: 5px;
+    padding: 7px;
     text-align: center;
     border: 1px solid #999;
     border-bottom: none;
     margin-bottom: 5px;
     cursor: pointer;
 }
+.info .notice > ul {
+    padding: 10px;
+}
 
 .info .notice > ul li {
     line-height: 1.3;
     color: #888;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #cdcdcd;    
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px;
+    cursor: pointer;
 }
 
  /* ✨서브 공통 */
